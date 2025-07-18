@@ -50,40 +50,40 @@ RecycleVision/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/RecycleVision.git
+git clone https://github.com/Vinayak77778/RecycleVision
 cd RecycleVision
+```
 
-2.Install dependencies
+
+2. **Install dependencies**
+```bash
 pip install -r requirements.txt
+```
 
-3.Run the Streamlit app
+3. **Run the Streamlit app**
+```bash
 streamlit run app/app.py
+```
+---
 
+## API Configuration:
 
+- This project uses the Clarifai API. To use it:\
+  - Create a free account on Clarifai\
+  - Generate a PAT (Personal Access Token)\
+  - Add the token in src/predict.py where indicated
+---
 
-API Configuration
-This project uses the Clarifai API. To use it:
+## Example Use Case
+- Upload image of a plastic bottle → App returns: Recyclable
+- Upload image of a banana peel → App returns: Compostable
+---
 
-Create a free account on Clarifai
+## Model Info
+- Model Used: Clarifai General Image Recognition Model
 
-Generate a PAT (Personal Access Token)
+- No Training Required: Uses pre-trained model from Clarifai
 
-Add the token in src/predict.py where indicated
+- Accuracy: 85–98% confidence range based on tests
 
-
-
-Example Use Case
-Upload image of a plastic bottle → App returns: Recyclable
-
-Upload image of a banana peel → App returns: Compostable
-
-
-
-Model Info
-Model Used: Clarifai General Image Recognition Model
-
-No Training Required: Uses pre-trained model from Clarifai
-
-Accuracy: 85–98% confidence range based on tests
-
-Speed: Response within 2 seconds
+- Speed: Response within 2 seconds
